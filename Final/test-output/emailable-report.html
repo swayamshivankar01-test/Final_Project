@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">14</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">276,974</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.tests.CheckoutTest</td><td><a href="#m0">validCouponTest</a></td><td rowspan="1">1781421598302</td><td rowspan="1">22401</td></tr><tr class="failedodd"><td rowspan="1">org.tests.RegisterTest</td><td><a href="#m1">validRegistrationTest</a></td><td rowspan="1">1781421434363</td><td rowspan="1">26193</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">org.tests.CartTest</td><td><a href="#m2">addToCartTest</a></td><td rowspan="1">1781421518121</td><td rowspan="1">11206</td></tr><tr class="passedeven"><td><a href="#m3">removeFromCartTest</a></td><td rowspan="1">1781421549660</td><td rowspan="1">13037</td></tr><tr class="passedeven"><td><a href="#m4">updateCartQuantityTest</a></td><td rowspan="1">1781421531230</td><td rowspan="1">16424</td></tr><tr class="passedodd"><td rowspan="2">org.tests.CheckoutTest</td><td><a href="#m5">fullCheckoutCODTest</a></td><td rowspan="1">1781421564659</td><td rowspan="1">31011</td></tr><tr class="passedodd"><td><a href="#m6">invalidCouponTest</a></td><td rowspan="1">1781421622699</td><td rowspan="1">14882</td></tr><tr class="passedeven"><td rowspan="3">org.tests.LoginTest</td><td><a href="#m7">blankLoginTest</a></td><td rowspan="1">1781421493110</td><td rowspan="1">5488</td></tr><tr class="passedeven"><td><a href="#m8">invalidLoginTest</a></td><td rowspan="1">1781421484703</td><td rowspan="1">6341</td></tr><tr class="passedeven"><td><a href="#m9">validLoginTest</a></td><td rowspan="1">1781421470035</td><td rowspan="1">12460</td></tr><tr class="passedodd"><td rowspan="2">org.tests.OrderTest</td><td><a href="#m10">cancelOrderTest</a></td><td rowspan="1">1781421652993</td><td rowspan="1">42700</td></tr><tr class="passedodd"><td><a href="#m11">viewOrderHistoryTest</a></td><td rowspan="1">1781421639593</td><td rowspan="1">11244</td></tr><tr class="passedeven"><td rowspan="1">org.tests.RegisterTest</td><td><a href="#m12">registrationMissingFieldsTest</a></td><td rowspan="1">1781421462888</td><td rowspan="1">5033</td></tr><tr class="passedodd"><td rowspan="2">org.tests.SearchTest</td><td><a href="#m13">priceFilterTest</a></td><td rowspan="1">1781421507891</td><td rowspan="1">7289</td></tr><tr class="passedodd"><td><a href="#m14">searchByKeywordTest</a></td><td rowspan="1">1781421500328</td><td rowspan="1">5491</td></tr><tr class="passedeven"><td rowspan="1">org.tests.WishlistTest</td><td><a href="#m15">addToWishlistTest</a></td><td rowspan="1">1781421697830</td><td rowspan="1">10425</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">org.tests.CheckoutTest#validCouponTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Valid coupon was not applied. Message: The coupon code you entered couldn&apos;t be applied to your order expected [false] but found [true]
+	at org.tests.CheckoutTest.validCouponTest(CheckoutTest.java:135)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">org.tests.RegisterTest#validRegistrationTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.className: result&apos;
+(tried for 10 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at org.tests.RegisterTest.validRegistrationTest(RegisterTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.result&quot;}
+  (Session info: chrome=149.0.7827.104)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f9943dc523e3d30a1ade8991895f209, findElement {using=class name, value=result}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.104, chrome: {chromedriverVersion: 149.0.7827.115 (daf70f9ddee..., userDataDir: C:\Users\swayam-PC\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58767}, goog:processID: 10156, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58767/devtoo..., se:cdpVersion: 149.0.7827.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f9943dc523e3d30a1ade8991895f209
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
+	... 27 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">org.tests.CartTest#addToCartTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">org.tests.CartTest#removeFromCartTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">org.tests.CartTest#updateCartQuantityTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">org.tests.CheckoutTest#fullCheckoutCODTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">org.tests.CheckoutTest#invalidCouponTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">org.tests.LoginTest#blankLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">org.tests.LoginTest#invalidLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">org.tests.LoginTest#validLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">org.tests.OrderTest#cancelOrderTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">org.tests.OrderTest#viewOrderHistoryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">org.tests.RegisterTest#registrationMissingFieldsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">org.tests.SearchTest#priceFilterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">org.tests.SearchTest#searchByKeywordTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">org.tests.WishlistTest#addToWishlistTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

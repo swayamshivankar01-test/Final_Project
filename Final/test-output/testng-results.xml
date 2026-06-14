@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="14" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-14T12:47:12 IST" name="Suite" finished-at="2026-06-14T12:51:48 IST" duration-ms="276974">
+    <groups>
+    </groups>
+    <test started-at="2026-06-14T12:47:12 IST" name="Test" finished-at="2026-06-14T12:51:48 IST" duration-ms="276974">
+      <class name="org.tests.WishlistTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.WishlistTest@5dda768f]" started-at="2026-06-14T12:51:36 IST" name="setup" finished-at="2026-06-14T12:51:37 IST" duration-ms="1427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addToWishlistTest()[pri:1, instance:org.tests.WishlistTest@5dda768f]" started-at="2026-06-14T12:51:37 IST" name="addToWishlistTest" finished-at="2026-06-14T12:51:48 IST" duration-ms="10425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToWishlistTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.WishlistTest@5dda768f]" started-at="2026-06-14T12:51:48 IST" name="teardown" finished-at="2026-06-14T12:51:48 IST" duration-ms="545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- org.tests.WishlistTest -->
+      <class name="org.tests.CheckoutTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.CheckoutTest@fbd1f6]" started-at="2026-06-14T12:49:23 IST" name="setup" finished-at="2026-06-14T12:49:24 IST" duration-ms="1330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="fullCheckoutCODTest()[pri:1, instance:org.tests.CheckoutTest@fbd1f6]" started-at="2026-06-14T12:49:24 IST" name="fullCheckoutCODTest" finished-at="2026-06-14T12:49:55 IST" duration-ms="31011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fullCheckoutCODTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.CheckoutTest@fbd1f6]" started-at="2026-06-14T12:49:55 IST" name="teardown" finished-at="2026-06-14T12:49:56 IST" duration-ms="730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.CheckoutTest@fbd1f6]" started-at="2026-06-14T12:49:56 IST" name="setup" finished-at="2026-06-14T12:49:58 IST" duration-ms="1757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validCouponTest()[pri:2, instance:org.tests.CheckoutTest@fbd1f6]" started-at="2026-06-14T12:49:58 IST" name="validCouponTest" finished-at="2026-06-14T12:50:20 IST" duration-ms="22401" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Valid coupon was not applied. Message: The coupon code you entered couldn't be applied to your order expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Valid coupon was not applied. Message: The coupon code you entered couldn't be applied to your order expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at org.tests.CheckoutTest.validCouponTest(CheckoutTest.java:135)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCouponTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.CheckoutTest@fbd1f6]" started-at="2026-06-14T12:50:20 IST" name="teardown" finished-at="2026-06-14T12:50:21 IST" duration-ms="325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.CheckoutTest@fbd1f6]" started-at="2026-06-14T12:50:21 IST" name="setup" finished-at="2026-06-14T12:50:22 IST" duration-ms="1516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidCouponTest()[pri:3, instance:org.tests.CheckoutTest@fbd1f6]" started-at="2026-06-14T12:50:22 IST" name="invalidCouponTest" finished-at="2026-06-14T12:50:37 IST" duration-ms="14882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCouponTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.CheckoutTest@fbd1f6]" started-at="2026-06-14T12:50:37 IST" name="teardown" finished-at="2026-06-14T12:50:38 IST" duration-ms="357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- org.tests.CheckoutTest -->
+      <class name="org.tests.CartTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.CartTest@55fe41ea]" started-at="2026-06-14T12:48:36 IST" name="setup" finished-at="2026-06-14T12:48:38 IST" duration-ms="1624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addToCartTest()[pri:1, instance:org.tests.CartTest@55fe41ea]" started-at="2026-06-14T12:48:38 IST" name="addToCartTest" finished-at="2026-06-14T12:48:49 IST" duration-ms="11206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.CartTest@55fe41ea]" started-at="2026-06-14T12:48:49 IST" name="teardown" finished-at="2026-06-14T12:48:50 IST" duration-ms="585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.CartTest@55fe41ea]" started-at="2026-06-14T12:48:50 IST" name="setup" finished-at="2026-06-14T12:48:51 IST" duration-ms="1160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateCartQuantityTest()[pri:2, instance:org.tests.CartTest@55fe41ea]" started-at="2026-06-14T12:48:51 IST" name="updateCartQuantityTest" finished-at="2026-06-14T12:49:07 IST" duration-ms="16424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCartQuantityTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.CartTest@55fe41ea]" started-at="2026-06-14T12:49:07 IST" name="teardown" finished-at="2026-06-14T12:49:08 IST" duration-ms="461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.CartTest@55fe41ea]" started-at="2026-06-14T12:49:08 IST" name="setup" finished-at="2026-06-14T12:49:09 IST" duration-ms="1403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="removeFromCartTest()[pri:3, instance:org.tests.CartTest@55fe41ea]" started-at="2026-06-14T12:49:09 IST" name="removeFromCartTest" finished-at="2026-06-14T12:49:22 IST" duration-ms="13037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeFromCartTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.CartTest@55fe41ea]" started-at="2026-06-14T12:49:22 IST" name="teardown" finished-at="2026-06-14T12:49:23 IST" duration-ms="481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- org.tests.CartTest -->
+      <class name="org.tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.LoginTest@ba2f4ec]" started-at="2026-06-14T12:47:48 IST" name="setup" finished-at="2026-06-14T12:47:50 IST" duration-ms="1311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validLoginTest()[pri:1, instance:org.tests.LoginTest@ba2f4ec]" started-at="2026-06-14T12:47:50 IST" name="validLoginTest" finished-at="2026-06-14T12:48:02 IST" duration-ms="12460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.LoginTest@ba2f4ec]" started-at="2026-06-14T12:48:02 IST" name="teardown" finished-at="2026-06-14T12:48:03 IST" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.LoginTest@ba2f4ec]" started-at="2026-06-14T12:48:03 IST" name="setup" finished-at="2026-06-14T12:48:04 IST" duration-ms="1567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidLoginTest()[pri:2, instance:org.tests.LoginTest@ba2f4ec]" started-at="2026-06-14T12:48:04 IST" name="invalidLoginTest" finished-at="2026-06-14T12:48:11 IST" duration-ms="6341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.LoginTest@ba2f4ec]" started-at="2026-06-14T12:48:11 IST" name="teardown" finished-at="2026-06-14T12:48:11 IST" duration-ms="498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.LoginTest@ba2f4ec]" started-at="2026-06-14T12:48:11 IST" name="setup" finished-at="2026-06-14T12:48:13 IST" duration-ms="1422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="blankLoginTest()[pri:3, instance:org.tests.LoginTest@ba2f4ec]" started-at="2026-06-14T12:48:13 IST" name="blankLoginTest" finished-at="2026-06-14T12:48:18 IST" duration-ms="5488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankLoginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.LoginTest@ba2f4ec]" started-at="2026-06-14T12:48:18 IST" name="teardown" finished-at="2026-06-14T12:48:19 IST" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- org.tests.LoginTest -->
+      <class name="org.tests.SearchTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.SearchTest@1c1bbc4e]" started-at="2026-06-14T12:48:19 IST" name="setup" finished-at="2026-06-14T12:48:20 IST" duration-ms="1172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchByKeywordTest()[pri:1, instance:org.tests.SearchTest@1c1bbc4e]" started-at="2026-06-14T12:48:20 IST" name="searchByKeywordTest" finished-at="2026-06-14T12:48:25 IST" duration-ms="5491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByKeywordTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.SearchTest@1c1bbc4e]" started-at="2026-06-14T12:48:25 IST" name="teardown" finished-at="2026-06-14T12:48:26 IST" duration-ms="478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.SearchTest@1c1bbc4e]" started-at="2026-06-14T12:48:26 IST" name="setup" finished-at="2026-06-14T12:48:27 IST" duration-ms="1426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="priceFilterTest()[pri:2, instance:org.tests.SearchTest@1c1bbc4e]" started-at="2026-06-14T12:48:27 IST" name="priceFilterTest" finished-at="2026-06-14T12:48:35 IST" duration-ms="7289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- priceFilterTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.SearchTest@1c1bbc4e]" started-at="2026-06-14T12:48:35 IST" name="teardown" finished-at="2026-06-14T12:48:36 IST" duration-ms="1179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- org.tests.SearchTest -->
+      <class name="org.tests.OrderTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.OrderTest@1ce24091]" started-at="2026-06-14T12:50:38 IST" name="setup" finished-at="2026-06-14T12:50:39 IST" duration-ms="1481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="viewOrderHistoryTest()[pri:1, instance:org.tests.OrderTest@1ce24091]" started-at="2026-06-14T12:50:39 IST" name="viewOrderHistoryTest" finished-at="2026-06-14T12:50:50 IST" duration-ms="11244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewOrderHistoryTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.OrderTest@1ce24091]" started-at="2026-06-14T12:50:50 IST" name="teardown" finished-at="2026-06-14T12:50:51 IST" duration-ms="493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.OrderTest@1ce24091]" started-at="2026-06-14T12:50:51 IST" name="setup" finished-at="2026-06-14T12:50:52 IST" duration-ms="1528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="cancelOrderTest()[pri:2, instance:org.tests.OrderTest@1ce24091]" started-at="2026-06-14T12:50:52 IST" name="cancelOrderTest" finished-at="2026-06-14T12:51:35 IST" duration-ms="42700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelOrderTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.OrderTest@1ce24091]" started-at="2026-06-14T12:51:35 IST" name="teardown" finished-at="2026-06-14T12:51:36 IST" duration-ms="522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- org.tests.OrderTest -->
+      <class name="org.tests.RegisterTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.RegisterTest@40a4337a]" started-at="2026-06-14T12:47:12 IST" name="setup" finished-at="2026-06-14T12:47:14 IST" duration-ms="2278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validRegistrationTest()[pri:1, instance:org.tests.RegisterTest@40a4337a]" started-at="2026-06-14T12:47:14 IST" name="validRegistrationTest" finished-at="2026-06-14T12:47:40 IST" duration-ms="26193" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.className: result'
+(tried for 10 seconds with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.className: result'
+(tried for 10 seconds with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+at org.tests.RegisterTest.validRegistrationTest(RegisterTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".result"}
+  (Session info: chrome=149.0.7827.104)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3f9943dc523e3d30a1ade8991895f209, findElement {using=class name, value=result}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.104, chrome: {chromedriverVersion: 149.0.7827.115 (daf70f9ddee..., userDataDir: C:\Users\swayam-PC\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58767}, goog:processID: 10156, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58767/devtoo..., se:cdpVersion: 149.0.7827.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f9943dc523e3d30a1ade8991895f209
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validRegistrationTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.RegisterTest@40a4337a]" started-at="2026-06-14T12:47:40 IST" name="teardown" finished-at="2026-06-14T12:47:41 IST" duration-ms="634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.tests.RegisterTest@40a4337a]" started-at="2026-06-14T12:47:41 IST" name="setup" finished-at="2026-06-14T12:47:42 IST" duration-ms="1419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registrationMissingFieldsTest()[pri:2, instance:org.tests.RegisterTest@40a4337a]" started-at="2026-06-14T12:47:42 IST" name="registrationMissingFieldsTest" finished-at="2026-06-14T12:47:47 IST" duration-ms="5033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationMissingFieldsTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.tests.RegisterTest@40a4337a]" started-at="2026-06-14T12:47:48 IST" name="teardown" finished-at="2026-06-14T12:47:48 IST" duration-ms="573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- org.tests.RegisterTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
