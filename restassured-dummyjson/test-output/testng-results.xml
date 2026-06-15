@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="40" passed="39" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-15T11:17:06 IST" name="DummyJSON nopCommerce QA Capstone Suite" finished-at="2026-06-15T11:17:32 IST" duration-ms="25805">
+    <groups>
+    </groups>
+    <test started-at="2026-06-15T11:17:06 IST" name="01 - User Authentication" finished-at="2026-06-15T11:17:14 IST" duration-ms="8050">
+      <class name="com.qa.tests.UserAuthenticationTest">
+        <test-method signature="tc001_loginWithValidCredentials()[pri:1, instance:com.qa.tests.UserAuthenticationTest@10876a6]" started-at="2026-06-15T11:17:06 IST" name="tc001_loginWithValidCredentials" description="API_TC_001 - Login with valid credentials" finished-at="2026-06-15T11:17:11 IST" duration-ms="5174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_loginWithValidCredentials -->
+        <test-method signature="tcNeg001_loginWithEmptyCredentials()[pri:2, instance:com.qa.tests.UserAuthenticationTest@10876a6]" started-at="2026-06-15T11:17:11 IST" name="tcNeg001_loginWithEmptyCredentials" description="API_TC_NEG_001 - Login with empty credentials" finished-at="2026-06-15T11:17:12 IST" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg001_loginWithEmptyCredentials -->
+        <test-method signature="tc002_loginWithInvalidPassword()[pri:3, instance:com.qa.tests.UserAuthenticationTest@10876a6]" started-at="2026-06-15T11:17:12 IST" name="tc002_loginWithInvalidPassword" description="API_TC_002 - Login with invalid password" finished-at="2026-06-15T11:17:12 IST" duration-ms="435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc002_loginWithInvalidPassword -->
+        <test-method signature="tcNeg002_loginWithInvalidUsername()[pri:4, instance:com.qa.tests.UserAuthenticationTest@10876a6]" started-at="2026-06-15T11:17:12 IST" name="tcNeg002_loginWithInvalidUsername" description="API_TC_NEG_002 - Login with invalid username" finished-at="2026-06-15T11:17:13 IST" duration-ms="401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg002_loginWithInvalidUsername -->
+        <test-method signature="tc003_getAuthenticatedUserProfile()[pri:5, instance:com.qa.tests.UserAuthenticationTest@10876a6]" started-at="2026-06-15T11:17:13 IST" name="tc003_getAuthenticatedUserProfile" description="API_TC_003 - Get authenticated user profile" finished-at="2026-06-15T11:17:13 IST" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc003_getAuthenticatedUserProfile -->
+        <test-method signature="tcNeg003_accessProtectedRouteWithoutToken()[pri:6, instance:com.qa.tests.UserAuthenticationTest@10876a6]" started-at="2026-06-15T11:17:13 IST" name="tcNeg003_accessProtectedRouteWithoutToken" description="API_TC_NEG_003 - Access protected route without token" finished-at="2026-06-15T11:17:14 IST" duration-ms="427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg003_accessProtectedRouteWithoutToken -->
+        <test-method signature="tcNeg004_accessProtectedRouteWithInvalidToken()[pri:7, instance:com.qa.tests.UserAuthenticationTest@10876a6]" started-at="2026-06-15T11:17:14 IST" name="tcNeg004_accessProtectedRouteWithInvalidToken" description="API_TC_NEG_004 - Access protected route with invalid token" finished-at="2026-06-15T11:17:14 IST" duration-ms="453" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code (is <401> or is <403>) but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code (is <401> or is <403>) but was <500>.
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+at com.qa.tests.UserAuthenticationTest.tcNeg004_accessProtectedRouteWithInvalidToken(UserAuthenticationTest.java:140)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg004_accessProtectedRouteWithInvalidToken -->
+      </class> <!-- com.qa.tests.UserAuthenticationTest -->
+    </test> <!-- 01 - User Authentication -->
+    <test started-at="2026-06-15T11:17:14 IST" name="02 - Product Catalogue and Search" finished-at="2026-06-15T11:17:17 IST" duration-ms="3357">
+      <class name="com.qa.tests.ProductCatalogueTest">
+        <test-method signature="tc004_getAllProducts()[pri:1, instance:com.qa.tests.ProductCatalogueTest@27c04377]" started-at="2026-06-15T11:17:14 IST" name="tc004_getAllProducts" description="API_TC_004 - Get all products" finished-at="2026-06-15T11:17:14 IST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc004_getAllProducts -->
+        <test-method signature="tcNeg005_getProductWithNonExistentId()[pri:2, instance:com.qa.tests.ProductCatalogueTest@27c04377]" started-at="2026-06-15T11:17:14 IST" name="tcNeg005_getProductWithNonExistentId" description="API_TC_NEG_005 - Get product with non-existent ID" finished-at="2026-06-15T11:17:15 IST" duration-ms="420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg005_getProductWithNonExistentId -->
+        <test-method signature="tc005_getProductById()[pri:3, instance:com.qa.tests.ProductCatalogueTest@27c04377]" started-at="2026-06-15T11:17:15 IST" name="tc005_getProductById" description="API_TC_005 - Get product by ID" finished-at="2026-06-15T11:17:15 IST" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc005_getProductById -->
+        <test-method signature="tcNeg006_getProductWithInvalidStringId()[pri:4, instance:com.qa.tests.ProductCatalogueTest@27c04377]" started-at="2026-06-15T11:17:15 IST" name="tcNeg006_getProductWithInvalidStringId" description="API_TC_NEG_006 - Get product with invalid string ID" finished-at="2026-06-15T11:17:15 IST" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg006_getProductWithInvalidStringId -->
+        <test-method signature="tc006_searchProductsByKeyword()[pri:5, instance:com.qa.tests.ProductCatalogueTest@27c04377]" started-at="2026-06-15T11:17:15 IST" name="tc006_searchProductsByKeyword" description="API_TC_006 - Search products by keyword" finished-at="2026-06-15T11:17:16 IST" duration-ms="468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc006_searchProductsByKeyword -->
+        <test-method signature="tcNeg007_searchProductsWithEmptyKeyword()[pri:6, instance:com.qa.tests.ProductCatalogueTest@27c04377]" started-at="2026-06-15T11:17:16 IST" name="tcNeg007_searchProductsWithEmptyKeyword" description="API_TC_NEG_007 - Search products with empty keyword" finished-at="2026-06-15T11:17:16 IST" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg007_searchProductsWithEmptyKeyword -->
+        <test-method signature="tc007_sortAndPaginateProductsByPrice()[pri:7, instance:com.qa.tests.ProductCatalogueTest@27c04377]" started-at="2026-06-15T11:17:16 IST" name="tc007_sortAndPaginateProductsByPrice" description="API_TC_007 - Sort and paginate products by price" finished-at="2026-06-15T11:17:17 IST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc007_sortAndPaginateProductsByPrice -->
+        <test-method signature="tcNeg008_getProductsByNonExistentCategory()[pri:8, instance:com.qa.tests.ProductCatalogueTest@27c04377]" started-at="2026-06-15T11:17:17 IST" name="tcNeg008_getProductsByNonExistentCategory" description="API_TC_NEG_008 - Get products by non-existent category" finished-at="2026-06-15T11:17:17 IST" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg008_getProductsByNonExistentCategory -->
+        <test-method signature="tc008_getProductsByCategory()[pri:9, instance:com.qa.tests.ProductCatalogueTest@27c04377]" started-at="2026-06-15T11:17:17 IST" name="tc008_getProductsByCategory" description="API_TC_008 - Get products by category" finished-at="2026-06-15T11:17:17 IST" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc008_getProductsByCategory -->
+      </class> <!-- com.qa.tests.ProductCatalogueTest -->
+    </test> <!-- 02 - Product Catalogue and Search -->
+    <test started-at="2026-06-15T11:17:17 IST" name="03 - Shopping Cart" finished-at="2026-06-15T11:17:21 IST" duration-ms="3746">
+      <class name="com.qa.tests.ShoppingCartTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.ShoppingCartTest@28a6301f]" started-at="2026-06-15T11:17:17 IST" name="setup" finished-at="2026-06-15T11:17:17 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc009_getAllCarts()[pri:1, instance:com.qa.tests.ShoppingCartTest@28a6301f]" started-at="2026-06-15T11:17:17 IST" name="tc009_getAllCarts" description="API_TC_009 - Get all carts" finished-at="2026-06-15T11:17:18 IST" duration-ms="554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc009_getAllCarts -->
+        <test-method signature="tcNeg009_getCartWithNonExistentId()[pri:2, instance:com.qa.tests.ShoppingCartTest@28a6301f]" started-at="2026-06-15T11:17:18 IST" name="tcNeg009_getCartWithNonExistentId" description="API_TC_NEG_009 - Get cart with non-existent ID" finished-at="2026-06-15T11:17:19 IST" duration-ms="1135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg009_getCartWithNonExistentId -->
+        <test-method signature="tc010_getCartById()[pri:3, instance:com.qa.tests.ShoppingCartTest@28a6301f]" started-at="2026-06-15T11:17:19 IST" name="tc010_getCartById" description="API_TC_010 - Get cart by ID" finished-at="2026-06-15T11:17:20 IST" duration-ms="449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc010_getCartById -->
+        <test-method signature="tcNeg010_addToCartWithMissingFields()[pri:4, instance:com.qa.tests.ShoppingCartTest@28a6301f]" started-at="2026-06-15T11:17:20 IST" name="tcNeg010_addToCartWithMissingFields" description="API_TC_NEG_010 - Add to cart with missing fields" finished-at="2026-06-15T11:17:20 IST" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg010_addToCartWithMissingFields -->
+        <test-method signature="tc011_getCartsByUser()[pri:5, instance:com.qa.tests.ShoppingCartTest@28a6301f]" started-at="2026-06-15T11:17:20 IST" name="tc011_getCartsByUser" description="API_TC_011 - Get carts by user" finished-at="2026-06-15T11:17:20 IST" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc011_getCartsByUser -->
+        <test-method signature="tcNeg011_addToCartWithNegativeQuantity()[pri:6, instance:com.qa.tests.ShoppingCartTest@28a6301f]" started-at="2026-06-15T11:17:20 IST" name="tcNeg011_addToCartWithNegativeQuantity" description="API_TC_NEG_011 - Add to cart with negative quantity" finished-at="2026-06-15T11:17:21 IST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg011_addToCartWithNegativeQuantity -->
+        <test-method signature="tc012_addProductToCart()[pri:7, instance:com.qa.tests.ShoppingCartTest@28a6301f]" started-at="2026-06-15T11:17:21 IST" name="tc012_addProductToCart" description="API_TC_012 - Add product to cart" finished-at="2026-06-15T11:17:21 IST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc012_addProductToCart -->
+      </class> <!-- com.qa.tests.ShoppingCartTest -->
+    </test> <!-- 03 - Shopping Cart -->
+    <test started-at="2026-06-15T11:17:21 IST" name="04 - Checkout and Payment" finished-at="2026-06-15T11:17:23 IST" duration-ms="1627">
+      <class name="com.qa.tests.CheckoutPaymentTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.CheckoutPaymentTest@38a1c423]" started-at="2026-06-15T11:17:21 IST" name="setup" finished-at="2026-06-15T11:17:21 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc013_checkoutCartWithMultipleProducts()[pri:1, instance:com.qa.tests.CheckoutPaymentTest@38a1c423]" started-at="2026-06-15T11:17:21 IST" name="tc013_checkoutCartWithMultipleProducts" description="API_TC_013 - Checkout cart with multiple products" finished-at="2026-06-15T11:17:22 IST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc013_checkoutCartWithMultipleProducts -->
+        <test-method signature="tcNeg012_checkoutWithEmptyProductsArray()[pri:2, instance:com.qa.tests.CheckoutPaymentTest@38a1c423]" started-at="2026-06-15T11:17:22 IST" name="tcNeg012_checkoutWithEmptyProductsArray" description="API_TC_NEG_012 - Checkout with empty products array" finished-at="2026-06-15T11:17:22 IST" duration-ms="390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg012_checkoutWithEmptyProductsArray -->
+        <test-method signature="tc014_updateCartQuantityForCheckout()[pri:3, instance:com.qa.tests.CheckoutPaymentTest@38a1c423]" started-at="2026-06-15T11:17:22 IST" name="tc014_updateCartQuantityForCheckout" description="API_TC_014 - Update cart quantity for checkout" finished-at="2026-06-15T11:17:22 IST" duration-ms="405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc014_updateCartQuantityForCheckout -->
+        <test-method signature="tcNeg013_updateCartWithNonExistentCartId()[pri:4, instance:com.qa.tests.CheckoutPaymentTest@38a1c423]" started-at="2026-06-15T11:17:22 IST" name="tcNeg013_updateCartWithNonExistentCartId" description="API_TC_NEG_013 - Update cart with non-existent cart ID" finished-at="2026-06-15T11:17:23 IST" duration-ms="405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg013_updateCartWithNonExistentCartId -->
+      </class> <!-- com.qa.tests.CheckoutPaymentTest -->
+    </test> <!-- 04 - Checkout and Payment -->
+    <test started-at="2026-06-15T11:17:23 IST" name="05 - Token Refresh and Session" finished-at="2026-06-15T11:17:24 IST" duration-ms="908">
+      <class name="com.qa.tests.TokenRefreshTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.TokenRefreshTest@4074023c]" started-at="2026-06-15T11:17:23 IST" name="setup" finished-at="2026-06-15T11:17:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc015_refreshAccessToken()[pri:1, instance:com.qa.tests.TokenRefreshTest@4074023c]" started-at="2026-06-15T11:17:23 IST" name="tc015_refreshAccessToken" description="API_TC_015 - Refresh access token" finished-at="2026-06-15T11:17:23 IST" duration-ms="460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc015_refreshAccessToken -->
+        <test-method signature="tcNeg_refreshWithInvalidToken()[pri:2, instance:com.qa.tests.TokenRefreshTest@4074023c]" started-at="2026-06-15T11:17:23 IST" name="tcNeg_refreshWithInvalidToken" description="API_TC_NEG - Refresh with invalid token" finished-at="2026-06-15T11:17:24 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg_refreshWithInvalidToken -->
+      </class> <!-- com.qa.tests.TokenRefreshTest -->
+    </test> <!-- 05 - Token Refresh and Session -->
+    <test started-at="2026-06-15T11:17:24 IST" name="06 - Wishlist" finished-at="2026-06-15T11:17:25 IST" duration-ms="1130">
+      <class name="com.qa.tests.WishlistTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.WishlistTest@54562ea6]" started-at="2026-06-15T11:17:24 IST" name="setup" finished-at="2026-06-15T11:17:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc016_getProductsForWishlistSelection()[pri:1, instance:com.qa.tests.WishlistTest@54562ea6]" started-at="2026-06-15T11:17:24 IST" name="tc016_getProductsForWishlistSelection" description="API_TC_016 - Get products for wishlist selection" finished-at="2026-06-15T11:17:24 IST" duration-ms="385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc016_getProductsForWishlistSelection -->
+        <test-method signature="tc017_moveWishlistProductToCartSimulation()[pri:2, instance:com.qa.tests.WishlistTest@54562ea6]" started-at="2026-06-15T11:17:24 IST" name="tc017_moveWishlistProductToCartSimulation" description="API_TC_017 - Move wishlist product to cart" finished-at="2026-06-15T11:17:25 IST" duration-ms="730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc017_moveWishlistProductToCartSimulation -->
+      </class> <!-- com.qa.tests.WishlistTest -->
+    </test> <!-- 06 - Wishlist -->
+    <test started-at="2026-06-15T11:17:25 IST" name="07 - Order Management" finished-at="2026-06-15T11:17:30 IST" duration-ms="4691">
+      <class name="com.qa.tests.OrderManagementTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.OrderManagementTest@14e2e1c3]" started-at="2026-06-15T11:17:25 IST" name="setup" finished-at="2026-06-15T11:17:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc018_retrieveUserCartsAsOrderHistory()[pri:1, instance:com.qa.tests.OrderManagementTest@14e2e1c3]" started-at="2026-06-15T11:17:25 IST" name="tc018_retrieveUserCartsAsOrderHistory" description="API_TC_018 - Retrieve user carts as order history" finished-at="2026-06-15T11:17:28 IST" duration-ms="3464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc018_retrieveUserCartsAsOrderHistory -->
+        <test-method signature="tcNeg014_retrieveCartsForNonExistentUser()[pri:2, instance:com.qa.tests.OrderManagementTest@14e2e1c3]" started-at="2026-06-15T11:17:28 IST" name="tcNeg014_retrieveCartsForNonExistentUser" description="API_TC_NEG_014 - Retrieve carts for non-existent user" finished-at="2026-06-15T11:17:29 IST" duration-ms="393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg014_retrieveCartsForNonExistentUser -->
+        <test-method signature="tc019_cancelOrderSimulationByDeletingCart()[pri:3, instance:com.qa.tests.OrderManagementTest@14e2e1c3]" started-at="2026-06-15T11:17:29 IST" name="tc019_cancelOrderSimulationByDeletingCart" description="API_TC_019 - Cancel order by deleting cart" finished-at="2026-06-15T11:17:29 IST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc019_cancelOrderSimulationByDeletingCart -->
+        <test-method signature="tcNeg015_deleteNonExistentCart()[pri:4, instance:com.qa.tests.OrderManagementTest@14e2e1c3]" started-at="2026-06-15T11:17:29 IST" name="tcNeg015_deleteNonExistentCart" description="API_TC_NEG_015 - Delete non-existent cart" finished-at="2026-06-15T11:17:30 IST" duration-ms="357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg015_deleteNonExistentCart -->
+      </class> <!-- com.qa.tests.OrderManagementTest -->
+    </test> <!-- 07 - Order Management -->
+    <test started-at="2026-06-15T11:17:30 IST" name="08 - User Profile Management" finished-at="2026-06-15T11:17:32 IST" duration-ms="2134">
+      <class name="com.qa.tests.UserProfileTest">
+        <test-method is-config="true" signature="globalSetup()[pri:0, instance:com.qa.tests.UserProfileTest@2715644a]" started-at="2026-06-15T11:17:04 IST" name="globalSetup" finished-at="2026-06-15T11:17:06 IST" duration-ms="1871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalSetup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.UserProfileTest@2715644a]" started-at="2026-06-15T11:17:30 IST" name="setup" finished-at="2026-06-15T11:17:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc020_getUserProfileById()[pri:1, instance:com.qa.tests.UserProfileTest@2715644a]" started-at="2026-06-15T11:17:30 IST" name="tc020_getUserProfileById" description="API_TC_020 - Get user profile by ID" finished-at="2026-06-15T11:17:30 IST" duration-ms="481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc020_getUserProfileById -->
+        <test-method signature="tcNeg016_getUserProfileWithNonExistentId()[pri:2, instance:com.qa.tests.UserProfileTest@2715644a]" started-at="2026-06-15T11:17:30 IST" name="tcNeg016_getUserProfileWithNonExistentId" description="API_TC_NEG_016 - Get user with non-existent ID" finished-at="2026-06-15T11:17:31 IST" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg016_getUserProfileWithNonExistentId -->
+        <test-method signature="tc021_updateUserProfile()[pri:3, instance:com.qa.tests.UserProfileTest@2715644a]" started-at="2026-06-15T11:17:31 IST" name="tc021_updateUserProfile" description="API_TC_021 - Update user profile" finished-at="2026-06-15T11:17:31 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc021_updateUserProfile -->
+        <test-method signature="tc022_partiallyUpdateUserProfile()[pri:4, instance:com.qa.tests.UserProfileTest@2715644a]" started-at="2026-06-15T11:17:31 IST" name="tc022_partiallyUpdateUserProfile" description="API_TC_022 - Partially update user profile" finished-at="2026-06-15T11:17:31 IST" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc022_partiallyUpdateUserProfile -->
+        <test-method signature="tcNeg017_updateUserWithInvalidEmailFormat()[pri:5, instance:com.qa.tests.UserProfileTest@2715644a]" started-at="2026-06-15T11:17:31 IST" name="tcNeg017_updateUserWithInvalidEmailFormat" description="API_TC_NEG_017 - Update user with invalid email format" finished-at="2026-06-15T11:17:32 IST" duration-ms="380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tcNeg017_updateUserWithInvalidEmailFormat -->
+      </class> <!-- com.qa.tests.UserProfileTest -->
+    </test> <!-- 08 - User Profile Management -->
+  </suite> <!-- DummyJSON nopCommerce QA Capstone Suite -->
+</testng-results>

@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" class="navigator-link">
+              <span class="suite-name border-failed">DummyJSON nopCommerce QA Capstone Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-DummyJSON_nopCommerce_QA_Capstone_Suite" class="navigator-link ">
+                    <span>C:\PROJECT\restassured-dummyjson\src\test\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-DummyJSON_nopCommerce_QA_Capstone_Suite" class="navigator-link ">
+                    <span class="test-stats">8 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-DummyJSON_nopCommerce_QA_Capstone_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-DummyJSON_nopCommerce_QA_Capstone_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-DummyJSON_nopCommerce_QA_Capstone_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-DummyJSON_nopCommerce_QA_Capstone_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-DummyJSON_nopCommerce_QA_Capstone_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">40 methods, 1 failed,   39 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" class="hide-methods failed suite-DummyJSON_nopCommerce_QA_Capstone_Suite"> (hide)</a> <!-- hide-methods failed suite-DummyJSON_nopCommerce_QA_Capstone_Suite -->
+                      <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" class="show-methods failed suite-DummyJSON_nopCommerce_QA_Capstone_Suite"> (show)</a> <!-- show-methods failed suite-DummyJSON_nopCommerce_QA_Capstone_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-DummyJSON_nopCommerce_QA_Capstone_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.UserAuthenticationTest" class="method navigator-link" hash-for-method="tcNeg004_accessProtectedRouteWithInvalidToken">tcNeg004_accessProtectedRouteWithInvalidToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-DummyJSON_nopCommerce_QA_Capstone_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" class="hide-methods passed suite-DummyJSON_nopCommerce_QA_Capstone_Suite"> (hide)</a> <!-- hide-methods passed suite-DummyJSON_nopCommerce_QA_Capstone_Suite -->
+                      <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" class="show-methods passed suite-DummyJSON_nopCommerce_QA_Capstone_Suite"> (show)</a> <!-- show-methods passed suite-DummyJSON_nopCommerce_QA_Capstone_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-DummyJSON_nopCommerce_QA_Capstone_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.UserAuthenticationTest" class="method navigator-link" hash-for-method="tc001_loginWithValidCredentials">tc001_loginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.UserAuthenticationTest" class="method navigator-link" hash-for-method="tc002_loginWithInvalidPassword">tc002_loginWithInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.UserAuthenticationTest" class="method navigator-link" hash-for-method="tc003_getAuthenticatedUserProfile">tc003_getAuthenticatedUserProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ProductCatalogueTest" class="method navigator-link" hash-for-method="tc004_getAllProducts">tc004_getAllProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ProductCatalogueTest" class="method navigator-link" hash-for-method="tc005_getProductById">tc005_getProductById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ProductCatalogueTest" class="method navigator-link" hash-for-method="tc006_searchProductsByKeyword">tc006_searchProductsByKeyword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ProductCatalogueTest" class="method navigator-link" hash-for-method="tc007_sortAndPaginateProductsByPrice">tc007_sortAndPaginateProductsByPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ProductCatalogueTest" class="method navigator-link" hash-for-method="tc008_getProductsByCategory">tc008_getProductsByCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ShoppingCartTest" class="method navigator-link" hash-for-method="tc009_getAllCarts">tc009_getAllCarts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ShoppingCartTest" class="method navigator-link" hash-for-method="tc010_getCartById">tc010_getCartById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ShoppingCartTest" class="method navigator-link" hash-for-method="tc011_getCartsByUser">tc011_getCartsByUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ShoppingCartTest" class="method navigator-link" hash-for-method="tc012_addProductToCart">tc012_addProductToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.CheckoutPaymentTest" class="method navigator-link" hash-for-method="tc013_checkoutCartWithMultipleProducts">tc013_checkoutCartWithMultipleProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.CheckoutPaymentTest" class="method navigator-link" hash-for-method="tc014_updateCartQuantityForCheckout">tc014_updateCartQuantityForCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.TokenRefreshTest" class="method navigator-link" hash-for-method="tc015_refreshAccessToken">tc015_refreshAccessToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.WishlistTest" class="method navigator-link" hash-for-method="tc016_getProductsForWishlistSelection">tc016_getProductsForWishlistSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.WishlistTest" class="method navigator-link" hash-for-method="tc017_moveWishlistProductToCartSimulation">tc017_moveWishlistProductToCartSimulation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.OrderManagementTest" class="method navigator-link" hash-for-method="tc018_retrieveUserCartsAsOrderHistory">tc018_retrieveUserCartsAsOrderHistory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.OrderManagementTest" class="method navigator-link" hash-for-method="tc019_cancelOrderSimulationByDeletingCart">tc019_cancelOrderSimulationByDeletingCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.UserProfileTest" class="method navigator-link" hash-for-method="tc020_getUserProfileById">tc020_getUserProfileById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.UserProfileTest" class="method navigator-link" hash-for-method="tc021_updateUserProfile">tc021_updateUserProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.UserProfileTest" class="method navigator-link" hash-for-method="tc022_partiallyUpdateUserProfile">tc022_partiallyUpdateUserProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.UserAuthenticationTest" class="method navigator-link" hash-for-method="tcNeg001_loginWithEmptyCredentials">tcNeg001_loginWithEmptyCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.UserAuthenticationTest" class="method navigator-link" hash-for-method="tcNeg002_loginWithInvalidUsername">tcNeg002_loginWithInvalidUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.UserAuthenticationTest" class="method navigator-link" hash-for-method="tcNeg003_accessProtectedRouteWithoutToken">tcNeg003_accessProtectedRouteWithoutToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ProductCatalogueTest" class="method navigator-link" hash-for-method="tcNeg005_getProductWithNonExistentId">tcNeg005_getProductWithNonExistentId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ProductCatalogueTest" class="method navigator-link" hash-for-method="tcNeg006_getProductWithInvalidStringId">tcNeg006_getProductWithInvalidStringId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ProductCatalogueTest" class="method navigator-link" hash-for-method="tcNeg007_searchProductsWithEmptyKeyword">tcNeg007_searchProductsWithEmptyKeyword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ProductCatalogueTest" class="method navigator-link" hash-for-method="tcNeg008_getProductsByNonExistentCategory">tcNeg008_getProductsByNonExistentCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ShoppingCartTest" class="method navigator-link" hash-for-method="tcNeg009_getCartWithNonExistentId">tcNeg009_getCartWithNonExistentId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ShoppingCartTest" class="method navigator-link" hash-for-method="tcNeg010_addToCartWithMissingFields">tcNeg010_addToCartWithMissingFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.ShoppingCartTest" class="method navigator-link" hash-for-method="tcNeg011_addToCartWithNegativeQuantity">tcNeg011_addToCartWithNegativeQuantity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.CheckoutPaymentTest" class="method navigator-link" hash-for-method="tcNeg012_checkoutWithEmptyProductsArray">tcNeg012_checkoutWithEmptyProductsArray</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.CheckoutPaymentTest" class="method navigator-link" hash-for-method="tcNeg013_updateCartWithNonExistentCartId">tcNeg013_updateCartWithNonExistentCartId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.OrderManagementTest" class="method navigator-link" hash-for-method="tcNeg014_retrieveCartsForNonExistentUser">tcNeg014_retrieveCartsForNonExistentUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.OrderManagementTest" class="method navigator-link" hash-for-method="tcNeg015_deleteNonExistentCart">tcNeg015_deleteNonExistentCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.UserProfileTest" class="method navigator-link" hash-for-method="tcNeg016_getUserProfileWithNonExistentId">tcNeg016_getUserProfileWithNonExistentId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.UserProfileTest" class="method navigator-link" hash-for-method="tcNeg017_updateUserWithInvalidEmailFormat">tcNeg017_updateUserWithInvalidEmailFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" title="com.qa.tests.TokenRefreshTest" class="method navigator-link" hash-for-method="tcNeg_refreshWithInvalidToken">tcNeg_refreshWithInvalidToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-DummyJSON_nopCommerce_QA_Capstone_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-DummyJSON_nopCommerce_QA_Capstone_Suite" class="panel DummyJSON_nopCommerce_QA_Capstone_Suite">
+          <div class="suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.tests.UserAuthenticationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg004_accessProtectedRouteWithInvalidToken">
+                  </a> <!-- tcNeg004_accessProtectedRouteWithInvalidToken -->
+                  <span class="method-name">tcNeg004_accessProtectedRouteWithInvalidToken</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code (is &lt;401&gt; or is &lt;403&gt;) but was &lt;500&gt;.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at com.qa.tests.UserAuthenticationTest.tcNeg004_accessProtectedRouteWithInvalidToken(UserAuthenticationTest.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(API_TC_NEG_004 - Access protected route with invalid token)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-failed -->
+          <div class="suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.tests.ProductCatalogueTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc004_getAllProducts">
+                  </a> <!-- tc004_getAllProducts -->
+                  <span class="method-name">tc004_getAllProducts</span>
+                  <em>
+(API_TC_004 - Get all products)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc005_getProductById">
+                  </a> <!-- tc005_getProductById -->
+                  <span class="method-name">tc005_getProductById</span>
+                  <em>
+(API_TC_005 - Get product by ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc006_searchProductsByKeyword">
+                  </a> <!-- tc006_searchProductsByKeyword -->
+                  <span class="method-name">tc006_searchProductsByKeyword</span>
+                  <em>
+(API_TC_006 - Search products by keyword)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc007_sortAndPaginateProductsByPrice">
+                  </a> <!-- tc007_sortAndPaginateProductsByPrice -->
+                  <span class="method-name">tc007_sortAndPaginateProductsByPrice</span>
+                  <em>
+(API_TC_007 - Sort and paginate products by price)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc008_getProductsByCategory">
+                  </a> <!-- tc008_getProductsByCategory -->
+                  <span class="method-name">tc008_getProductsByCategory</span>
+                  <em>
+(API_TC_008 - Get products by category)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg005_getProductWithNonExistentId">
+                  </a> <!-- tcNeg005_getProductWithNonExistentId -->
+                  <span class="method-name">tcNeg005_getProductWithNonExistentId</span>
+                  <em>
+(API_TC_NEG_005 - Get product with non-existent ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg006_getProductWithInvalidStringId">
+                  </a> <!-- tcNeg006_getProductWithInvalidStringId -->
+                  <span class="method-name">tcNeg006_getProductWithInvalidStringId</span>
+                  <em>
+(API_TC_NEG_006 - Get product with invalid string ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg007_searchProductsWithEmptyKeyword">
+                  </a> <!-- tcNeg007_searchProductsWithEmptyKeyword -->
+                  <span class="method-name">tcNeg007_searchProductsWithEmptyKeyword</span>
+                  <em>
+(API_TC_NEG_007 - Search products with empty keyword)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg008_getProductsByNonExistentCategory">
+                  </a> <!-- tcNeg008_getProductsByNonExistentCategory -->
+                  <span class="method-name">tcNeg008_getProductsByNonExistentCategory</span>
+                  <em>
+(API_TC_NEG_008 - Get products by non-existent category)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed -->
+          <div class="suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.tests.UserProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc020_getUserProfileById">
+                  </a> <!-- tc020_getUserProfileById -->
+                  <span class="method-name">tc020_getUserProfileById</span>
+                  <em>
+(API_TC_020 - Get user profile by ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc021_updateUserProfile">
+                  </a> <!-- tc021_updateUserProfile -->
+                  <span class="method-name">tc021_updateUserProfile</span>
+                  <em>
+(API_TC_021 - Update user profile)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc022_partiallyUpdateUserProfile">
+                  </a> <!-- tc022_partiallyUpdateUserProfile -->
+                  <span class="method-name">tc022_partiallyUpdateUserProfile</span>
+                  <em>
+(API_TC_022 - Partially update user profile)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg016_getUserProfileWithNonExistentId">
+                  </a> <!-- tcNeg016_getUserProfileWithNonExistentId -->
+                  <span class="method-name">tcNeg016_getUserProfileWithNonExistentId</span>
+                  <em>
+(API_TC_NEG_016 - Get user with non-existent ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg017_updateUserWithInvalidEmailFormat">
+                  </a> <!-- tcNeg017_updateUserWithInvalidEmailFormat -->
+                  <span class="method-name">tcNeg017_updateUserWithInvalidEmailFormat</span>
+                  <em>
+(API_TC_NEG_017 - Update user with invalid email format)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed -->
+          <div class="suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.tests.UserAuthenticationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc001_loginWithValidCredentials">
+                  </a> <!-- tc001_loginWithValidCredentials -->
+                  <span class="method-name">tc001_loginWithValidCredentials</span>
+                  <em>
+(API_TC_001 - Login with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc002_loginWithInvalidPassword">
+                  </a> <!-- tc002_loginWithInvalidPassword -->
+                  <span class="method-name">tc002_loginWithInvalidPassword</span>
+                  <em>
+(API_TC_002 - Login with invalid password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc003_getAuthenticatedUserProfile">
+                  </a> <!-- tc003_getAuthenticatedUserProfile -->
+                  <span class="method-name">tc003_getAuthenticatedUserProfile</span>
+                  <em>
+(API_TC_003 - Get authenticated user profile)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg001_loginWithEmptyCredentials">
+                  </a> <!-- tcNeg001_loginWithEmptyCredentials -->
+                  <span class="method-name">tcNeg001_loginWithEmptyCredentials</span>
+                  <em>
+(API_TC_NEG_001 - Login with empty credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg002_loginWithInvalidUsername">
+                  </a> <!-- tcNeg002_loginWithInvalidUsername -->
+                  <span class="method-name">tcNeg002_loginWithInvalidUsername</span>
+                  <em>
+(API_TC_NEG_002 - Login with invalid username)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg003_accessProtectedRouteWithoutToken">
+                  </a> <!-- tcNeg003_accessProtectedRouteWithoutToken -->
+                  <span class="method-name">tcNeg003_accessProtectedRouteWithoutToken</span>
+                  <em>
+(API_TC_NEG_003 - Access protected route without token)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed -->
+          <div class="suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.tests.ShoppingCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc009_getAllCarts">
+                  </a> <!-- tc009_getAllCarts -->
+                  <span class="method-name">tc009_getAllCarts</span>
+                  <em>
+(API_TC_009 - Get all carts)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc010_getCartById">
+                  </a> <!-- tc010_getCartById -->
+                  <span class="method-name">tc010_getCartById</span>
+                  <em>
+(API_TC_010 - Get cart by ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc011_getCartsByUser">
+                  </a> <!-- tc011_getCartsByUser -->
+                  <span class="method-name">tc011_getCartsByUser</span>
+                  <em>
+(API_TC_011 - Get carts by user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc012_addProductToCart">
+                  </a> <!-- tc012_addProductToCart -->
+                  <span class="method-name">tc012_addProductToCart</span>
+                  <em>
+(API_TC_012 - Add product to cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg009_getCartWithNonExistentId">
+                  </a> <!-- tcNeg009_getCartWithNonExistentId -->
+                  <span class="method-name">tcNeg009_getCartWithNonExistentId</span>
+                  <em>
+(API_TC_NEG_009 - Get cart with non-existent ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg010_addToCartWithMissingFields">
+                  </a> <!-- tcNeg010_addToCartWithMissingFields -->
+                  <span class="method-name">tcNeg010_addToCartWithMissingFields</span>
+                  <em>
+(API_TC_NEG_010 - Add to cart with missing fields)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg011_addToCartWithNegativeQuantity">
+                  </a> <!-- tcNeg011_addToCartWithNegativeQuantity -->
+                  <span class="method-name">tcNeg011_addToCartWithNegativeQuantity</span>
+                  <em>
+(API_TC_NEG_011 - Add to cart with negative quantity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed -->
+          <div class="suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.tests.WishlistTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc016_getProductsForWishlistSelection">
+                  </a> <!-- tc016_getProductsForWishlistSelection -->
+                  <span class="method-name">tc016_getProductsForWishlistSelection</span>
+                  <em>
+(API_TC_016 - Get products for wishlist selection)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc017_moveWishlistProductToCartSimulation">
+                  </a> <!-- tc017_moveWishlistProductToCartSimulation -->
+                  <span class="method-name">tc017_moveWishlistProductToCartSimulation</span>
+                  <em>
+(API_TC_017 - Move wishlist product to cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed -->
+          <div class="suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.tests.CheckoutPaymentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc013_checkoutCartWithMultipleProducts">
+                  </a> <!-- tc013_checkoutCartWithMultipleProducts -->
+                  <span class="method-name">tc013_checkoutCartWithMultipleProducts</span>
+                  <em>
+(API_TC_013 - Checkout cart with multiple products)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc014_updateCartQuantityForCheckout">
+                  </a> <!-- tc014_updateCartQuantityForCheckout -->
+                  <span class="method-name">tc014_updateCartQuantityForCheckout</span>
+                  <em>
+(API_TC_014 - Update cart quantity for checkout)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg012_checkoutWithEmptyProductsArray">
+                  </a> <!-- tcNeg012_checkoutWithEmptyProductsArray -->
+                  <span class="method-name">tcNeg012_checkoutWithEmptyProductsArray</span>
+                  <em>
+(API_TC_NEG_012 - Checkout with empty products array)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg013_updateCartWithNonExistentCartId">
+                  </a> <!-- tcNeg013_updateCartWithNonExistentCartId -->
+                  <span class="method-name">tcNeg013_updateCartWithNonExistentCartId</span>
+                  <em>
+(API_TC_NEG_013 - Update cart with non-existent cart ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed -->
+          <div class="suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.tests.OrderManagementTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc018_retrieveUserCartsAsOrderHistory">
+                  </a> <!-- tc018_retrieveUserCartsAsOrderHistory -->
+                  <span class="method-name">tc018_retrieveUserCartsAsOrderHistory</span>
+                  <em>
+(API_TC_018 - Retrieve user carts as order history)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc019_cancelOrderSimulationByDeletingCart">
+                  </a> <!-- tc019_cancelOrderSimulationByDeletingCart -->
+                  <span class="method-name">tc019_cancelOrderSimulationByDeletingCart</span>
+                  <em>
+(API_TC_019 - Cancel order by deleting cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg014_retrieveCartsForNonExistentUser">
+                  </a> <!-- tcNeg014_retrieveCartsForNonExistentUser -->
+                  <span class="method-name">tcNeg014_retrieveCartsForNonExistentUser</span>
+                  <em>
+(API_TC_NEG_014 - Retrieve carts for non-existent user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg015_deleteNonExistentCart">
+                  </a> <!-- tcNeg015_deleteNonExistentCart -->
+                  <span class="method-name">tcNeg015_deleteNonExistentCart</span>
+                  <em>
+(API_TC_NEG_015 - Delete non-existent cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed -->
+          <div class="suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.tests.TokenRefreshTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc015_refreshAccessToken">
+                  </a> <!-- tc015_refreshAccessToken -->
+                  <span class="method-name">tc015_refreshAccessToken</span>
+                  <em>
+(API_TC_015 - Refresh access token)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tcNeg_refreshWithInvalidToken">
+                  </a> <!-- tcNeg_refreshWithInvalidToken -->
+                  <span class="method-name">tcNeg_refreshWithInvalidToken</span>
+                  <em>
+(API_TC_NEG - Refresh with invalid token)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DummyJSON_nopCommerce_QA_Capstone_Suite-class-passed -->
+        </div> <!-- panel DummyJSON_nopCommerce_QA_Capstone_Suite -->
+        <div panel-name="test-xml-DummyJSON_nopCommerce_QA_Capstone_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\PROJECT\restassured-dummyjson\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;DummyJSON nopCommerce QA Capstone Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;2&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;io.qameta.allure.testng.AllureTestNg&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;01 - User Authentication&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.UserAuthenticationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 01 - User Authentication --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;02 - Product Catalogue and Search&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.ProductCatalogueTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 02 - Product Catalogue and Search --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;03 - Shopping Cart&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.ShoppingCartTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 03 - Shopping Cart --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;04 - Checkout and Payment&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.CheckoutPaymentTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 04 - Checkout and Payment --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;05 - Token Refresh and Session&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.TokenRefreshTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 05 - Token Refresh and Session --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;06 - Wishlist&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.WishlistTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 06 - Wishlist --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;07 - Order Management&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.OrderManagementTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 07 - Order Management --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;08 - User Profile Management&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.UserProfileTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 08 - User Profile Management --&gt;
+&lt;/suite&gt; &lt;!-- DummyJSON nopCommerce QA Capstone Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-DummyJSON_nopCommerce_QA_Capstone_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for DummyJSON nopCommerce QA Capstone Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">01 - User Authentication (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">02 - Product Catalogue and Search (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">03 - Shopping Cart (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">04 - Checkout and Payment (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">05 - Token Refresh and Session (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">06 - Wishlist (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">07 - Order Management (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">08 - User Profile Management (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-DummyJSON_nopCommerce_QA_Capstone_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for DummyJSON nopCommerce QA Capstone Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-DummyJSON_nopCommerce_QA_Capstone_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for DummyJSON nopCommerce QA Capstone Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_DummyJSON_nopCommerce_QA_Capstone_Suite');
+function tableData_DummyJSON_nopCommerce_QA_Capstone_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(40);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'tc001_loginWithValidCredentials')
+data.setCell(0, 2, 'com.qa.tests.UserAuthenticationTest')
+data.setCell(0, 3, 5174);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'tc018_retrieveUserCartsAsOrderHistory')
+data.setCell(1, 2, 'com.qa.tests.OrderManagementTest')
+data.setCell(1, 3, 3464);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'tcNeg009_getCartWithNonExistentId')
+data.setCell(2, 2, 'com.qa.tests.ShoppingCartTest')
+data.setCell(2, 3, 1135);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'tc017_moveWishlistProductToCartSimulation')
+data.setCell(3, 2, 'com.qa.tests.WishlistTest')
+data.setCell(3, 3, 730);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'tc009_getAllCarts')
+data.setCell(4, 2, 'com.qa.tests.ShoppingCartTest')
+data.setCell(4, 3, 554);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'tc003_getAuthenticatedUserProfile')
+data.setCell(5, 2, 'com.qa.tests.UserAuthenticationTest')
+data.setCell(5, 3, 490);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'tc020_getUserProfileById')
+data.setCell(6, 2, 'com.qa.tests.UserProfileTest')
+data.setCell(6, 3, 481);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'tc006_searchProductsByKeyword')
+data.setCell(7, 2, 'com.qa.tests.ProductCatalogueTest')
+data.setCell(7, 3, 468);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'tc015_refreshAccessToken')
+data.setCell(8, 2, 'com.qa.tests.TokenRefreshTest')
+data.setCell(8, 3, 460);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'tc007_sortAndPaginateProductsByPrice')
+data.setCell(9, 2, 'com.qa.tests.ProductCatalogueTest')
+data.setCell(9, 3, 455);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'tc019_cancelOrderSimulationByDeletingCart')
+data.setCell(10, 2, 'com.qa.tests.OrderManagementTest')
+data.setCell(10, 3, 455);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'tcNeg004_accessProtectedRouteWithInvalidToken')
+data.setCell(11, 2, 'com.qa.tests.UserAuthenticationTest')
+data.setCell(11, 3, 453);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'tcNeg007_searchProductsWithEmptyKeyword')
+data.setCell(12, 2, 'com.qa.tests.ProductCatalogueTest')
+data.setCell(12, 3, 451);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'tc010_getCartById')
+data.setCell(13, 2, 'com.qa.tests.ShoppingCartTest')
+data.setCell(13, 3, 449);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'tcNeg_refreshWithInvalidToken')
+data.setCell(14, 2, 'com.qa.tests.TokenRefreshTest')
+data.setCell(14, 3, 440);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'tc021_updateUserProfile')
+data.setCell(15, 2, 'com.qa.tests.UserProfileTest')
+data.setCell(15, 3, 440);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'tc002_loginWithInvalidPassword')
+data.setCell(16, 2, 'com.qa.tests.UserAuthenticationTest')
+data.setCell(16, 3, 435);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'tcNeg003_accessProtectedRouteWithoutToken')
+data.setCell(17, 2, 'com.qa.tests.UserAuthenticationTest')
+data.setCell(17, 3, 427);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'tcNeg005_getProductWithNonExistentId')
+data.setCell(18, 2, 'com.qa.tests.ProductCatalogueTest')
+data.setCell(18, 3, 420);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'tc011_getCartsByUser')
+data.setCell(19, 2, 'com.qa.tests.ShoppingCartTest')
+data.setCell(19, 3, 414);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'tc008_getProductsByCategory')
+data.setCell(20, 2, 'com.qa.tests.ProductCatalogueTest')
+data.setCell(20, 3, 412);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'tcNeg016_getUserProfileWithNonExistentId')
+data.setCell(21, 2, 'com.qa.tests.UserProfileTest')
+data.setCell(21, 3, 412);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'tc012_addProductToCart')
+data.setCell(22, 2, 'com.qa.tests.ShoppingCartTest')
+data.setCell(22, 3, 406);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'tc013_checkoutCartWithMultipleProducts')
+data.setCell(23, 2, 'com.qa.tests.CheckoutPaymentTest')
+data.setCell(23, 3, 406);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'tc014_updateCartQuantityForCheckout')
+data.setCell(24, 2, 'com.qa.tests.CheckoutPaymentTest')
+data.setCell(24, 3, 405);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'tcNeg013_updateCartWithNonExistentCartId')
+data.setCell(25, 2, 'com.qa.tests.CheckoutPaymentTest')
+data.setCell(25, 3, 405);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'tcNeg002_loginWithInvalidUsername')
+data.setCell(26, 2, 'com.qa.tests.UserAuthenticationTest')
+data.setCell(26, 3, 401);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'tcNeg011_addToCartWithNegativeQuantity')
+data.setCell(27, 2, 'com.qa.tests.ShoppingCartTest')
+data.setCell(27, 3, 398);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'tc022_partiallyUpdateUserProfile')
+data.setCell(28, 2, 'com.qa.tests.UserProfileTest')
+data.setCell(28, 3, 397);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'tcNeg014_retrieveCartsForNonExistentUser')
+data.setCell(29, 2, 'com.qa.tests.OrderManagementTest')
+data.setCell(29, 3, 393);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'tcNeg012_checkoutWithEmptyProductsArray')
+data.setCell(30, 2, 'com.qa.tests.CheckoutPaymentTest')
+data.setCell(30, 3, 390);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'tc016_getProductsForWishlistSelection')
+data.setCell(31, 2, 'com.qa.tests.WishlistTest')
+data.setCell(31, 3, 385);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'tcNeg017_updateUserWithInvalidEmailFormat')
+data.setCell(32, 2, 'com.qa.tests.UserProfileTest')
+data.setCell(32, 3, 380);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'tcNeg008_getProductsByNonExistentCategory')
+data.setCell(33, 2, 'com.qa.tests.ProductCatalogueTest')
+data.setCell(33, 3, 374);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'tcNeg010_addToCartWithMissingFields')
+data.setCell(34, 2, 'com.qa.tests.ShoppingCartTest')
+data.setCell(34, 3, 359);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'tcNeg015_deleteNonExistentCart')
+data.setCell(35, 2, 'com.qa.tests.OrderManagementTest')
+data.setCell(35, 3, 357);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'tcNeg001_loginWithEmptyCredentials')
+data.setCell(36, 2, 'com.qa.tests.UserAuthenticationTest')
+data.setCell(36, 3, 340);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'tcNeg006_getProductWithInvalidStringId')
+data.setCell(37, 2, 'com.qa.tests.ProductCatalogueTest')
+data.setCell(37, 3, 336);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'tc004_getAllProducts')
+data.setCell(38, 2, 'com.qa.tests.ProductCatalogueTest')
+data.setCell(38, 3, 238);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'tc005_getProductById')
+data.setCell(39, 2, 'com.qa.tests.ProductCatalogueTest')
+data.setCell(39, 3, 164);
+window.suiteTableData['DummyJSON_nopCommerce_QA_Capstone_Suite']= { tableData: data, tableDiv: 'times-div-DummyJSON_nopCommerce_QA_Capstone_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <div id="times-div-DummyJSON_nopCommerce_QA_Capstone_Suite">
+              </div> <!-- times-div-DummyJSON_nopCommerce_QA_Capstone_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-DummyJSON_nopCommerce_QA_Capstone_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for DummyJSON nopCommerce QA Capstone Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-DummyJSON_nopCommerce_QA_Capstone_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-DummyJSON_nopCommerce_QA_Capstone_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.UserProfileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">globalSetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.UserAuthenticationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">tc001_loginWithValidCredentials</span>
+                <span class="method-start">1988 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg001_loginWithEmptyCredentials</span>
+                <span class="method-start">7335 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc002_loginWithInvalidPassword</span>
+                <span class="method-start">7683 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg002_loginWithInvalidUsername</span>
+                <span class="method-start">8122 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc003_getAuthenticatedUserProfile</span>
+                <span class="method-start">8533 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg003_accessProtectedRouteWithoutToken</span>
+                <span class="method-start">9029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tcNeg004_accessProtectedRouteWithInvalidToken</span>
+                <span class="method-start">9461 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.ProductCatalogueTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">tc004_getAllProducts</span>
+                <span class="method-start">10014 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg005_getProductWithNonExistentId</span>
+                <span class="method-start">10257 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc005_getProductById</span>
+                <span class="method-start">10684 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg006_getProductWithInvalidStringId</span>
+                <span class="method-start">10852 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc006_searchProductsByKeyword</span>
+                <span class="method-start">11193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg007_searchProductsWithEmptyKeyword</span>
+                <span class="method-start">11665 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc007_sortAndPaginateProductsByPrice</span>
+                <span class="method-start">12118 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg008_getProductsByNonExistentCategory</span>
+                <span class="method-start">12576 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc008_getProductsByCategory</span>
+                <span class="method-start">12954 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.ShoppingCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">13385 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">tc009_getAllCarts</span>
+                <span class="method-start">13387 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg009_getCartWithNonExistentId</span>
+                <span class="method-start">13945 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc010_getCartById</span>
+                <span class="method-start">15085 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg010_addToCartWithMissingFields</span>
+                <span class="method-start">15537 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc011_getCartsByUser</span>
+                <span class="method-start">15901 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg011_addToCartWithNegativeQuantity</span>
+                <span class="method-start">16318 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc012_addProductToCart</span>
+                <span class="method-start">16719 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.CheckoutPaymentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">17143 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">tc013_checkoutCartWithMultipleProducts</span>
+                <span class="method-start">17144 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg012_checkoutWithEmptyProductsArray</span>
+                <span class="method-start">17553 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc014_updateCartQuantityForCheckout</span>
+                <span class="method-start">17950 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg013_updateCartWithNonExistentCartId</span>
+                <span class="method-start">18358 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.TokenRefreshTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">18780 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">tc015_refreshAccessToken</span>
+                <span class="method-start">18781 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg_refreshWithInvalidToken</span>
+                <span class="method-start">19244 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.WishlistTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">19699 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">tc016_getProductsForWishlistSelection</span>
+                <span class="method-start">19703 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc017_moveWishlistProductToCartSimulation</span>
+                <span class="method-start">20092 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.OrderManagementTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">20843 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">tc018_retrieveUserCartsAsOrderHistory</span>
+                <span class="method-start">20844 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg014_retrieveCartsForNonExistentUser</span>
+                <span class="method-start">24311 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc019_cancelOrderSimulationByDeletingCart</span>
+                <span class="method-start">24708 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg015_deleteNonExistentCart</span>
+                <span class="method-start">25169 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.UserProfileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">25546 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">tc020_getUserProfileById</span>
+                <span class="method-start">25547 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg016_getUserProfileWithNonExistentId</span>
+                <span class="method-start">26032 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc021_updateUserProfile</span>
+                <span class="method-start">26449 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc022_partiallyUpdateUserProfile</span>
+                <span class="method-start">26891 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tcNeg017_updateUserWithInvalidEmailFormat</span>
+                <span class="method-start">27294 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

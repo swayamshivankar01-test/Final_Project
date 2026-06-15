@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>TestNG:  02 - Product Catalogue and Search</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>02 - Product Catalogue and Search</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 15 11:17:14 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3357 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.tests.ProductCatalogueTest.tc006_searchProductsByKeyword()'><b>tc006_searchProductsByKeyword</b><br>Test class: com.qa.tests.ProductCatalogueTest<br>Test method: API_TC_006 - Search products by keyword</td>
+<td></td>
+<td>0</td>
+<td>com.qa.tests.ProductCatalogueTest@27c04377</td></tr>
+<tr>
+<td title='com.qa.tests.ProductCatalogueTest.tcNeg006_getProductWithInvalidStringId()'><b>tcNeg006_getProductWithInvalidStringId</b><br>Test class: com.qa.tests.ProductCatalogueTest<br>Test method: API_TC_NEG_006 - Get product with invalid string ID</td>
+<td></td>
+<td>0</td>
+<td>com.qa.tests.ProductCatalogueTest@27c04377</td></tr>
+<tr>
+<td title='com.qa.tests.ProductCatalogueTest.tcNeg007_searchProductsWithEmptyKeyword()'><b>tcNeg007_searchProductsWithEmptyKeyword</b><br>Test class: com.qa.tests.ProductCatalogueTest<br>Test method: API_TC_NEG_007 - Search products with empty keyword</td>
+<td></td>
+<td>0</td>
+<td>com.qa.tests.ProductCatalogueTest@27c04377</td></tr>
+<tr>
+<td title='com.qa.tests.ProductCatalogueTest.tcNeg008_getProductsByNonExistentCategory()'><b>tcNeg008_getProductsByNonExistentCategory</b><br>Test class: com.qa.tests.ProductCatalogueTest<br>Test method: API_TC_NEG_008 - Get products by non-existent category</td>
+<td></td>
+<td>0</td>
+<td>com.qa.tests.ProductCatalogueTest@27c04377</td></tr>
+<tr>
+<td title='com.qa.tests.ProductCatalogueTest.tcNeg005_getProductWithNonExistentId()'><b>tcNeg005_getProductWithNonExistentId</b><br>Test class: com.qa.tests.ProductCatalogueTest<br>Test method: API_TC_NEG_005 - Get product with non-existent ID</td>
+<td></td>
+<td>0</td>
+<td>com.qa.tests.ProductCatalogueTest@27c04377</td></tr>
+<tr>
+<td title='com.qa.tests.ProductCatalogueTest.tc004_getAllProducts()'><b>tc004_getAllProducts</b><br>Test class: com.qa.tests.ProductCatalogueTest<br>Test method: API_TC_004 - Get all products</td>
+<td></td>
+<td>0</td>
+<td>com.qa.tests.ProductCatalogueTest@27c04377</td></tr>
+<tr>
+<td title='com.qa.tests.ProductCatalogueTest.tc005_getProductById()'><b>tc005_getProductById</b><br>Test class: com.qa.tests.ProductCatalogueTest<br>Test method: API_TC_005 - Get product by ID</td>
+<td></td>
+<td>0</td>
+<td>com.qa.tests.ProductCatalogueTest@27c04377</td></tr>
+<tr>
+<td title='com.qa.tests.ProductCatalogueTest.tc007_sortAndPaginateProductsByPrice()'><b>tc007_sortAndPaginateProductsByPrice</b><br>Test class: com.qa.tests.ProductCatalogueTest<br>Test method: API_TC_007 - Sort and paginate products by price</td>
+<td></td>
+<td>0</td>
+<td>com.qa.tests.ProductCatalogueTest@27c04377</td></tr>
+<tr>
+<td title='com.qa.tests.ProductCatalogueTest.tc008_getProductsByCategory()'><b>tc008_getProductsByCategory</b><br>Test class: com.qa.tests.ProductCatalogueTest<br>Test method: API_TC_008 - Get products by category</td>
+<td></td>
+<td>0</td>
+<td>com.qa.tests.ProductCatalogueTest@27c04377</td></tr>
+</table><p>
+</body>
+</html>

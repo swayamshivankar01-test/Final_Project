@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">DummyJSON nopCommerce QA Capstone Suite</th></tr>
+<tr><td><a href="#t0">01 - User Authentication</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,050</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">02 - Product Catalogue and Search</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3,357</td><td></td><td></td></tr>
+<tr><td><a href="#t2">03 - Shopping Cart</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3,746</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">04 - Checkout and Payment</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1,627</td><td></td><td></td></tr>
+<tr><td><a href="#t4">05 - Token Refresh and Session</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">908</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t5">06 - Wishlist</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1,130</td><td></td><td></td></tr>
+<tr><td><a href="#t6">07 - Order Management</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,691</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t7">08 - User Profile Management</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">2,134</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">39</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">25,643</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">DummyJSON nopCommerce QA Capstone Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">01 - User Authentication &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.tests.UserAuthenticationTest</td><td><a href="#m0">tcNeg004_accessProtectedRouteWithInvalidToken</a></td><td rowspan="1">1781502434032</td><td rowspan="1">453</td></tr><tr><th colspan="4">01 - User Authentication &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.qa.tests.UserAuthenticationTest</td><td><a href="#m1">tc001_loginWithValidCredentials</a></td><td rowspan="1">1781502426559</td><td rowspan="1">5174</td></tr><tr class="passedeven"><td><a href="#m2">tc002_loginWithInvalidPassword</a></td><td rowspan="1">1781502432254</td><td rowspan="1">435</td></tr><tr class="passedeven"><td><a href="#m3">tc003_getAuthenticatedUserProfile</a></td><td rowspan="1">1781502433104</td><td rowspan="1">490</td></tr><tr class="passedeven"><td><a href="#m4">tcNeg001_loginWithEmptyCredentials</a></td><td rowspan="1">1781502431906</td><td rowspan="1">340</td></tr><tr class="passedeven"><td><a href="#m5">tcNeg002_loginWithInvalidUsername</a></td><td rowspan="1">1781502432693</td><td rowspan="1">401</td></tr><tr class="passedeven"><td><a href="#m6">tcNeg003_accessProtectedRouteWithoutToken</a></td><td rowspan="1">1781502433600</td><td rowspan="1">427</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">02 - Product Catalogue and Search &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">com.qa.tests.ProductCatalogueTest</td><td><a href="#m7">tc004_getAllProducts</a></td><td rowspan="1">1781502434585</td><td rowspan="1">238</td></tr><tr class="passedeven"><td><a href="#m8">tc005_getProductById</a></td><td rowspan="1">1781502435255</td><td rowspan="1">164</td></tr><tr class="passedeven"><td><a href="#m9">tc006_searchProductsByKeyword</a></td><td rowspan="1">1781502435764</td><td rowspan="1">468</td></tr><tr class="passedeven"><td><a href="#m10">tc007_sortAndPaginateProductsByPrice</a></td><td rowspan="1">1781502436689</td><td rowspan="1">455</td></tr><tr class="passedeven"><td><a href="#m11">tc008_getProductsByCategory</a></td><td rowspan="1">1781502437525</td><td rowspan="1">412</td></tr><tr class="passedeven"><td><a href="#m12">tcNeg005_getProductWithNonExistentId</a></td><td rowspan="1">1781502434828</td><td rowspan="1">420</td></tr><tr class="passedeven"><td><a href="#m13">tcNeg006_getProductWithInvalidStringId</a></td><td rowspan="1">1781502435423</td><td rowspan="1">336</td></tr><tr class="passedeven"><td><a href="#m14">tcNeg007_searchProductsWithEmptyKeyword</a></td><td rowspan="1">1781502436236</td><td rowspan="1">451</td></tr><tr class="passedeven"><td><a href="#m15">tcNeg008_getProductsByNonExistentCategory</a></td><td rowspan="1">1781502437147</td><td rowspan="1">374</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">03 - Shopping Cart &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">com.qa.tests.ShoppingCartTest</td><td><a href="#m16">tc009_getAllCarts</a></td><td rowspan="1">1781502437958</td><td rowspan="1">554</td></tr><tr class="passedeven"><td><a href="#m17">tc010_getCartById</a></td><td rowspan="1">1781502439656</td><td rowspan="1">449</td></tr><tr class="passedeven"><td><a href="#m18">tc011_getCartsByUser</a></td><td rowspan="1">1781502440472</td><td rowspan="1">414</td></tr><tr class="passedeven"><td><a href="#m19">tc012_addProductToCart</a></td><td rowspan="1">1781502441290</td><td rowspan="1">406</td></tr><tr class="passedeven"><td><a href="#m20">tcNeg009_getCartWithNonExistentId</a></td><td rowspan="1">1781502438516</td><td rowspan="1">1135</td></tr><tr class="passedeven"><td><a href="#m21">tcNeg010_addToCartWithMissingFields</a></td><td rowspan="1">1781502440108</td><td rowspan="1">359</td></tr><tr class="passedeven"><td><a href="#m22">tcNeg011_addToCartWithNegativeQuantity</a></td><td rowspan="1">1781502440889</td><td rowspan="1">398</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">04 - Checkout and Payment &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.qa.tests.CheckoutPaymentTest</td><td><a href="#m23">tc013_checkoutCartWithMultipleProducts</a></td><td rowspan="1">1781502441715</td><td rowspan="1">406</td></tr><tr class="passedeven"><td><a href="#m24">tc014_updateCartQuantityForCheckout</a></td><td rowspan="1">1781502442521</td><td rowspan="1">405</td></tr><tr class="passedeven"><td><a href="#m25">tcNeg012_checkoutWithEmptyProductsArray</a></td><td rowspan="1">1781502442124</td><td rowspan="1">390</td></tr><tr class="passedeven"><td><a href="#m26">tcNeg013_updateCartWithNonExistentCartId</a></td><td rowspan="1">1781502442929</td><td rowspan="1">405</td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">05 - Token Refresh and Session &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.qa.tests.TokenRefreshTest</td><td><a href="#m27">tc015_refreshAccessToken</a></td><td rowspan="1">1781502443352</td><td rowspan="1">460</td></tr><tr class="passedeven"><td><a href="#m28">tcNeg_refreshWithInvalidToken</a></td><td rowspan="1">1781502443815</td><td rowspan="1">440</td></tr></tbody>
+<tbody id="t5"><tr><th colspan="4">06 - Wishlist &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.qa.tests.WishlistTest</td><td><a href="#m29">tc016_getProductsForWishlistSelection</a></td><td rowspan="1">1781502444274</td><td rowspan="1">385</td></tr><tr class="passedeven"><td><a href="#m30">tc017_moveWishlistProductToCartSimulation</a></td><td rowspan="1">1781502444663</td><td rowspan="1">730</td></tr></tbody>
+<tbody id="t6"><tr><th colspan="4">07 - Order Management &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.qa.tests.OrderManagementTest</td><td><a href="#m31">tc018_retrieveUserCartsAsOrderHistory</a></td><td rowspan="1">1781502445415</td><td rowspan="1">3464</td></tr><tr class="passedeven"><td><a href="#m32">tc019_cancelOrderSimulationByDeletingCart</a></td><td rowspan="1">1781502449279</td><td rowspan="1">455</td></tr><tr class="passedeven"><td><a href="#m33">tcNeg014_retrieveCartsForNonExistentUser</a></td><td rowspan="1">1781502448882</td><td rowspan="1">393</td></tr><tr class="passedeven"><td><a href="#m34">tcNeg015_deleteNonExistentCart</a></td><td rowspan="1">1781502449740</td><td rowspan="1">357</td></tr></tbody>
+<tbody id="t7"><tr><th colspan="4">08 - User Profile Management &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.qa.tests.UserProfileTest</td><td><a href="#m35">tc020_getUserProfileById</a></td><td rowspan="1">1781502450118</td><td rowspan="1">481</td></tr><tr class="passedeven"><td><a href="#m36">tc021_updateUserProfile</a></td><td rowspan="1">1781502451020</td><td rowspan="1">440</td></tr><tr class="passedeven"><td><a href="#m37">tc022_partiallyUpdateUserProfile</a></td><td rowspan="1">1781502451462</td><td rowspan="1">397</td></tr><tr class="passedeven"><td><a href="#m38">tcNeg016_getUserProfileWithNonExistentId</a></td><td rowspan="1">1781502450603</td><td rowspan="1">412</td></tr><tr class="passedeven"><td><a href="#m39">tcNeg017_updateUserWithInvalidEmailFormat</a></td><td rowspan="1">1781502451865</td><td rowspan="1">380</td></tr></tbody>
+</table>
+<h2>01 - User Authentication</h2><h3 id="m0">com.qa.tests.UserAuthenticationTest#tcNeg004_accessProtectedRouteWithInvalidToken</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code (is &lt;401&gt; or is &lt;403&gt;) but was &lt;500&gt;.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at com.qa.tests.UserAuthenticationTest.tcNeg004_accessProtectedRouteWithInvalidToken(UserAuthenticationTest.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.tests.UserAuthenticationTest#tc001_loginWithValidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.tests.UserAuthenticationTest#tc002_loginWithInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.tests.UserAuthenticationTest#tc003_getAuthenticatedUserProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.tests.UserAuthenticationTest#tcNeg001_loginWithEmptyCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.qa.tests.UserAuthenticationTest#tcNeg002_loginWithInvalidUsername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.qa.tests.UserAuthenticationTest#tcNeg003_accessProtectedRouteWithoutToken</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>02 - Product Catalogue and Search</h2><h3 id="m7">com.qa.tests.ProductCatalogueTest#tc004_getAllProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.qa.tests.ProductCatalogueTest#tc005_getProductById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.qa.tests.ProductCatalogueTest#tc006_searchProductsByKeyword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.qa.tests.ProductCatalogueTest#tc007_sortAndPaginateProductsByPrice</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.qa.tests.ProductCatalogueTest#tc008_getProductsByCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.qa.tests.ProductCatalogueTest#tcNeg005_getProductWithNonExistentId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.qa.tests.ProductCatalogueTest#tcNeg006_getProductWithInvalidStringId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.qa.tests.ProductCatalogueTest#tcNeg007_searchProductsWithEmptyKeyword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.qa.tests.ProductCatalogueTest#tcNeg008_getProductsByNonExistentCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>03 - Shopping Cart</h2><h3 id="m16">com.qa.tests.ShoppingCartTest#tc009_getAllCarts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.qa.tests.ShoppingCartTest#tc010_getCartById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.qa.tests.ShoppingCartTest#tc011_getCartsByUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.qa.tests.ShoppingCartTest#tc012_addProductToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.qa.tests.ShoppingCartTest#tcNeg009_getCartWithNonExistentId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.qa.tests.ShoppingCartTest#tcNeg010_addToCartWithMissingFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">com.qa.tests.ShoppingCartTest#tcNeg011_addToCartWithNegativeQuantity</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>04 - Checkout and Payment</h2><h3 id="m23">com.qa.tests.CheckoutPaymentTest#tc013_checkoutCartWithMultipleProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">com.qa.tests.CheckoutPaymentTest#tc014_updateCartQuantityForCheckout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">com.qa.tests.CheckoutPaymentTest#tcNeg012_checkoutWithEmptyProductsArray</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">com.qa.tests.CheckoutPaymentTest#tcNeg013_updateCartWithNonExistentCartId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>05 - Token Refresh and Session</h2><h3 id="m27">com.qa.tests.TokenRefreshTest#tc015_refreshAccessToken</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">com.qa.tests.TokenRefreshTest#tcNeg_refreshWithInvalidToken</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>06 - Wishlist</h2><h3 id="m29">com.qa.tests.WishlistTest#tc016_getProductsForWishlistSelection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">com.qa.tests.WishlistTest#tc017_moveWishlistProductToCartSimulation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>07 - Order Management</h2><h3 id="m31">com.qa.tests.OrderManagementTest#tc018_retrieveUserCartsAsOrderHistory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">com.qa.tests.OrderManagementTest#tc019_cancelOrderSimulationByDeletingCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">com.qa.tests.OrderManagementTest#tcNeg014_retrieveCartsForNonExistentUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">com.qa.tests.OrderManagementTest#tcNeg015_deleteNonExistentCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>08 - User Profile Management</h2><h3 id="m35">com.qa.tests.UserProfileTest#tc020_getUserProfileById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m36">com.qa.tests.UserProfileTest#tc021_updateUserProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m37">com.qa.tests.UserProfileTest#tc022_partiallyUpdateUserProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m38">com.qa.tests.UserProfileTest#tcNeg016_getUserProfileWithNonExistentId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m39">com.qa.tests.UserProfileTest#tcNeg017_updateUserWithInvalidEmailFormat</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

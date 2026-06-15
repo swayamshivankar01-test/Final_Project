@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [DummyJSON nopCommerce QA Capstone Suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <listeners>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+  </listeners>
+  <test thread-count="1" name="01 - User Authentication(failed)" verbose="2">
+    <classes>
+      <class name="com.qa.tests.UserAuthenticationTest">
+        <methods>
+          <include name="globalSetup"/>
+          <include name="tcNeg004_accessProtectedRouteWithInvalidToken"/>
+        </methods>
+      </class> <!-- com.qa.tests.UserAuthenticationTest -->
+    </classes>
+  </test> <!-- 01 - User Authentication(failed) -->
+</suite> <!-- Failed suite [DummyJSON nopCommerce QA Capstone Suite] -->
