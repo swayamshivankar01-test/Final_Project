@@ -7,33 +7,60 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  build-final:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        java-version: [ '17' ]
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up JDK ${{ matrix.java-version }}
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
-          java-version: ${{ matrix.java-version }}
+          java-version: '17'
           distribution: 'temurin'
           cache: 'maven'
 
-      - name: Build with Maven
-        run: mvn -B clean package --file pom.xml
+      - name: Build with Maven (Final)
+        working-directory: Final
+        run: mvn -B clean package
 
-      - name: Run tests
-        run: mvn -B test --file pom.xml
+      - name: Run tests (Final)
+        working-directory: Final
+        run: mvn -B test
 
-      - name: Upload build artifact
+      - name: Upload build artifact (Final)
         if: success()
         uses: actions/upload-artifact@v4
         with:
-          name: build-output
-          path: target/*.jar
+          name: final-build-output
+          path: Final/target/*.jar
+
+  build-restassured-dummyjson:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'maven'
+
+      - name: Build with Maven (restassured-dummyjson)
+        working-directory: restassured-dummyjson
+        run: mvn -B clean package
+
+      - name: Run tests (restassured-dummyjson)
+        working-directory: restassured-dummyjson
+        run: mvn -B test
+
+      - name: Upload build artifact (restassured-dummyjson)
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: restassured-dummyjson-build-output
+          path: restassured-dummyjson/target/*.jar
